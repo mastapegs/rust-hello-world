@@ -1,6 +1,5 @@
 mod types;
-use types::Color;
-use types::Person;
+use types::{Color, Person};
 
 mod utils;
 use utils::handle_job_title;
