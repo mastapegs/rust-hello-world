@@ -1,6 +1,7 @@
 mod custom_types;
 
 use custom_types::Person;
+use custom_types::Color;
 
 fn main() {
     let _an_int: i32 = 32;
@@ -13,6 +14,7 @@ fn main() {
         age: 32,
         hobby: "Coding".to_string(),
         job_title: "Software Developer".to_string(),
+        favorite_color: Color::Cyan,
     };
 
     println!("{:?}", me);
