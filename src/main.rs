@@ -13,7 +13,7 @@ fn main() {
         name: "Matthew Pagan".to_string(),
         age: 32,
         hobby: "Coding".to_string(),
-        job_title: "Software Developer".to_string(),
+        job_title: Some("Software Developer".to_string()),
         favorite_color: Color::Cyan,
     };
 
