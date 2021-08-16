@@ -1,7 +1,7 @@
 mod custom_types;
 
-use custom_types::Person;
 use custom_types::Color;
+use custom_types::Person;
 
 fn main() {
     let _an_int: i32 = 32;
@@ -17,5 +17,21 @@ fn main() {
         favorite_color: Color::Cyan,
     };
 
-    println!("{:?}", me);
+    let noah: Person = Person {
+        name: "Noah Pagan".to_string(),
+        age: 5,
+        hobby: "Lego".to_string(),
+        job_title: None,
+        favorite_color: Color::Blue,
+    };
+
+    match me.job_title {
+        Some(title) => println!("{} is a {}", me.name, title),
+        None => println!("{} doesn't have a job", me.name),
+    }
+
+    match noah.job_title {
+        Some(title) => println!("{} is a {}", noah.name, title),
+        None => println!("{} doesn't have a job", noah.name),
+    }
 }
